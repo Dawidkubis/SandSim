@@ -175,7 +175,7 @@ namespace SandSim
                     newY = (rawY / gridSize) * gridSize;
 
                     //sets grid location to particle type
-                    if (brush == false && newX > 0 && newX < 990 && newY > 0 && newY < 780)
+                    if (!brush && newX > 0 && newX < 990 && newY > 0 && newY < 780)
                     {
                         switch (material)
                         {
@@ -211,7 +211,7 @@ namespace SandSim
                                 break;
                         }
                     }
-                    else if (brush == true && newX > 10 && newX < 980 && newY > 10 && newY < 770)
+                    else if (brush && newX > 10 && newX < 980 && newY > 10 && newY < 770)
                     {
                         switch (material)
                         {
